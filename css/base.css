@@ -1,4 +1,4 @@
-body { font-family: Arial, Arial, sans-serif;  font-size: 13px}
+body { font-family: 'Ubuntu', sans-serif;  font-size: 13px}
 .position, .project_type { font-size: .7em; font-weight: normal; }
 .timeframe {float: right; font-size: .9em; font-weight: normal; font-style: italic }
 hr { border: 0; border-top: solid 1px #eee; margin-top: 1.5em; }
