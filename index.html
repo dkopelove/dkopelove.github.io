@@ -13,7 +13,7 @@
     <div id='page'>
       <h1>Dan Kopelove</h1>
       <p class="links">
-        <a href='mailto:kopelovd@gmail.com'>kopelovd@gmail.com</a>
+        <a href='mailto:dan.kopelove@gmail.com'>dan.kopelove@gmail.com</a>
         <br>
         <a href='https://github.com/dkopelove'>github.com/dkopelove</a>
       </p>
@@ -26,41 +26,103 @@
       </p>
       <h2>Overview</h2>
       <ul>
-        <li>My primary expertise is in <b>firmware</b>. Specializing in <b>embedded systems</b>.</li>
-        <li>I’m comfortable and experienced in <b>manufacturing</b> and <b>systems integration</b> related roles.</li>
+        <li>My primary expertise is in <b>firmware</b>. I am specialized in <b>embedded systems</b>.</li>
+        <li>I write code predominately in Python, C++, and C in that order.</li>
+        <li>I’m comfortable and experienced in <b>development</b> and <b>manufacturing</b> roles.</li>
         <li>I strive to write code that is robust. Balancing elegance against time pressures.</li>
+        <li>Most recently I have been supporting the Xilinx Versal architecture.</li>
       </ul>
       <hr/>
       <h2>Experience</h2>
       <h3>
-        Tesla 
+        <span class="company">Xilinx</span>
+        <span class='position'>- Staff Embedded Software Engineer</span>
+        <span class='timeframe'>Dec 2017 - Present</span>
+      </h3>
+      Member of the ChipScope (aka: Labtools) Runtime Software team.
+      <br/><span class="sli">The teams' charter is to support design debug through debug cores, in my case <b>SysMon</b>, <b>NoC</b></span>
+      <ul>
+        <li>
+          System Monitor (SysMon)
+          <ul>
+            <li><a href="https://www.xilinx.com/products/silicon-devices/acap/versal.html">Versal</a> support, including Stacked Silicon Interconnect Technology (SSIT) devices</li>
+            <li>Support CoE during Verification and Characterization (VnC) of all new devices</li>
+            <li>US/US+ including Zynq-7000 and Zynq-MPSoC - legacy support</li>
+          </ul>
+        </li>
+        <li>
+          Network on Chip (NoC) Performance Monitoring - New block in Versal Architecture
+          <ul>
+            <li>Customer support through ChipScopy F/OSS project: <a href="https://www.github.com/Xilinx/chipscopy">chipscopy</a></li>
+            <li>Support CoE and other NoC users (namely DDR, PL, and AIE subsystems) during VnC</li>
+          </ul>
+        <li>Pre-tapeout verification (Protium, C, assembly, emulation and prototyping, tcl)</li>
+        <li>Vivado Design Suite - IPI Designs for Versal
+          <ul>
+            <li>VnC support - need to build designs for Si checkout after first parts back: SysMon, CIPS, NoC, DDR and HBM</li>
+            <li>Design Archive Feature - Design related info collated into a container for lab debug sessions - technical lead</li>
+            <li>Dynamic Function Exchange - for debug use-case analysis, testing, and archive support</li>
+          </ul>
+        </li>
+        <li>Continuous Integration
+        <ul>
+          <li>Jenkins pipeline for automated build testing, packaging, promotion [artifactory, docker, pytest, wheel]</li>
+        </ul></li>
+        <li>Documentation Support
+        <ul>
+          <li>Responsible for content in various subsections of:
+          <ul>
+            <li><a href="https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_1/ug908-vivado-programming-debugging.pdf">UG908</a></li>
+            <li><a href="https://www.xilinx.com/support/documentation/sw_manuals/xilinx2021_1/ug1388-acap-system-integration-validation-methodology.pdf">UG1388</a></li>
+            <li><a href="https://www.xilinx.com/support/documentation/ip_documentation/axi_noc/v1_0/pg313-network-on-chip.pdf">PG313</a></li>
+            <li><a href="https://www.xilinx.com/support/documentation/ip_documentation/perf_axi_tg/v1_0/pg381-perf-axi-tg-spec.pdf">PG381</a> - extensive use and testing</li>
+            <li>Many Answer Requests, XAPP notes, forum responses</li>
+          </ul></li>
+          <li>Peer Review Team: triaging, SR escalation, CR workflows, forum scrubbing</li>
+        </ul>
+        </li>
+        <li>Internship Program</li>
+        <ul>
+          <li>Managed technical aspects of three internships, two have been converted to full time.</li>
+          <li>Help create requisitions, interview candidates, attend career fairs, drive selection of team members</li>
+          <li>Implemented equal opportunity initiative for team requisitions</li>
+        </ul>
+      </ul>
+      <h3>
+        <span class="company">Tesla</span>
         <span class='position'>– Sr. Firmware Engineer</span>
-        <span class='timeframe'>May 2015 – present</span>
+        <span class='timeframe'>May 2015 – December 2017</span>
       </h3>
       <ul>
-        <li>Gateway ECU alerts improvements and fleet analytics scrubbing (C, python)</li>
+        <li>Gateway ECU alerts improvements and fleet analytics scrubbing (C, Python)</li>
         <li>Improved CAN transceiver operation and monitoring for fleet alerts (C)</li>
-        <li>Debugged several complex issues related to modem and other wakeup events (fleet tools, python)</li>
-        <li>Performance based testing of Gateway (python)</li>
+        <li>Debugged several complex issues related to modem and other wakeup events (fleet tools, Python, C)</li>
+        <li>Performance based testing of Gateway (Python)</li>
         <li>Regression testing of 12V subsystem and vehicle power rails (Vector, C)</li>
         <li>Developed LIN driver for updated HomeLink modules on MS/X, M3 platforms and worked through PPAP</li>
         <li>Removed manual testing of HomeLink on the line eliminating the 3rd largest contributor to IPV in the GA mfg pareto</li>
         <li>Designed and implemented HIL/SIL test framework for M3 bring-up, reducing cost from $25k+/tester to $1k</li>
         <li>Linked requirements to executions by setting up CI using RabbitMQ consumer, XRAY(jira), and Jenkins (traceability)</li>
         <li>Help design, implement, and validate secure update mechanism in 45day “go public” bug (MS hacking)</li>
+        <li>Internship Program</li>
+        <ul>
+          <li>Managed technical aspects of two internships</li>
+          <li>Interviewed candidates, drive selection of team members</li>
+          <li>Salary and compensation negotiation</li>
+        </ul>
       </ul>
       <h3>
-        Micron Technology
+        <span class="company">Micron Technology</span>
         <span class='position'>– Test Process Engineer</span>
         <span class='timeframe'>Oct 2014 – May 2015</span>
       </h3>
       <ul>
-        <li>Developed tester requirements for enterprise class NVMe drive and python test tool for drive level testing</li>
+        <li>Developed tester requirements for enterprise class NVMe drive and Python test tool for drive level testing</li>
       </ul>
       <h3>
-        Kozio, Inc. 
+        <span class="company">Kozio</span> 
         <span class='position'>– Firmware Engineer</span>
-        <span class='timeframe'>Dec 2012 – Aug 2014</span>
+        <span class='timeframe'>Dec 2012 – Sep 2014</span>
       </h3>
       <ul>
         <li>Developed product for board level testing, pre- and post-silicon testing for a large variety of firmware and hardware</li>
@@ -70,7 +132,7 @@
         <li>Analyzed and developed numerous customer designs using device tree file-based projects for rapid device testing</li>
       </ul>
       <h3>
-        Tendril Networks, Inc. 
+        <span class="company">Tendril Networks</span>
         <span class='position'>– Sr. Firmware Engineer</span>
         <span class='timeframe'>May 2009 – Dec 2012</span>
       </h3>
@@ -84,7 +146,9 @@
         <li>Designed calibration h/w, f/w, and test fixtures for smart outlet to guarantee 1% accuracy over entire load range</li>
         <li>Wrote lib for Zigbee routers joining code, provided 95% code coverage that increased product lifetime</li>
         <li>Wrote high reliability communication protocol for delivering billing-grade data for utility customers between data collection server and Zigbee gateway</li>
-        <h3><span class='position'>– Manufacturing and Test Engineer</span></h3>
+      </ul>
+      <span class='position'>– Manufacturing and Test Engineer</span></h3>
+      <ul>
         <li>Took on Test Engineer role to rapidly solve numerous manufacturing and test problems for the company</li>
         <li>Designed, built, debugged and documented calibration fixture for smart outlet that reduced energy waste by 82% on the line, and made line operation safer for line operators </li>
         <li>Developed SQL database implementation that reduced line configuration overhead dramatically</li>
@@ -92,49 +156,23 @@
         <li>Wrote 2D bar code labeling VI’s to handle the generation of ECC installation codes, solving the provisioning issue that was a stop-ship issue for the company</li>
         <li>Wrote gateway configuration VI for adding personality to devices at the end of the line, deprecating the need for an field upgrade at first power on at the customer’s premise</li>
       </ul>
-      <h3>
-        University of Colorado, CS dept 
-        <span class='position'>– Linux Systems Administrator</span>
-        <span class='timeframe'>Jan 2008 – Aug 2009</span>
-      </h3>
-      <ul>
-        <li>Implemented a disk-less Linux image, abstracting 50 workstations into a one, reducing update overhead by 98%</li>
-        <li>Implemented new managed switch configuration that increased network throughput by over 400%</li>
-        <li>Set up Xen virtual servers that insured 100% lab resources uptime</li>
-        <li>Implemented new Lab web site (using Joomla), setup, howto, etc., providing self-help resources to CSEL users</li>
-      </ul>
-      <h3>
-        LSI Logic 
-        <span class='position'>– Firmware Engineer, Intern</span>
-        <span class='timeframe'>May 2007 – Aug 2008</span>
-      </h3>
-      <ul>
-        <li>Augmented enclosure monitoring card firmware to be standards compliant</li>
-      </ul>
       <hr/>
       <h2>Education</h2>
       <ul>
-        <li>B.S., Electrical and Computer Engineering, University of Colorado<span class='timeframe'>2009</span></li>
-        <li>B.S., Computer Science Engineering, University of Colorado<span class='timeframe'>2009</span></li>
-        <li>Professional Certificate in Embedded System Design, University of Colorado<span class='timeframe'>2009</span></li>
-      </ul>
-      <h2>Honors</h2>
-      <ul>
-        <li>Tendril “CEO’s Club” member for outstanding employees/leaders 2012</li>
-        <li>College of Engineering Merit scholarship, 2007/2008</li>
-        <li>Tony Tisone Scholarship, 2006/2007 academic year</li>
-        <li>Dean's list University of Colorado, 2005/2006 academic year</li>
+        <li>B.S., Electrical and Computer Engineering, University of Colorado<span class='timeframe'>2005-2009</span></li>
+        <li>B.S., Computer Science Engineering, University of Colorado<span class='timeframe'>2005-2009</span></li>
+        <li>Professional Certificate in Embedded System Design, University of Colorado<span class='timeframe'>2008-2009</span></li>
       </ul>
       <h2>Tools</h2>
       <ul>
+        <li><b>Programming Languages:</b> Python, C, C++, Bash, standard Unix tools, *nix programming, sockets, make, Verilog, TCL</li>
+        <li><b>FPGAs and Tool-chains:</b>Versal, Xilinx Zynq-7000, Zynq-MPSoC, US/US+ (Artix, Kintex, Virtex); Vivado, Vitis</li>
         <li><b>Device drivers:</b> I.Mx6 family: I2C, SPI, IPU and HDMI, UART, MIPI-CSI, gigabit Ethernet, I2S, SSI, EIM (localbus), USB xhci compliant controller. Zynq: gigabit Ethernet, UART; numerous IEEE 802.3 PHYs, AM335: MMU, QorIQ: I2C, LAW</li>
-        <li><b>Programming Languages:</b> C, Python, Bash, standard Unix tools, *nix programming, sockets, make, Verilog</li>
-        <li><b>Architectures and Assembly Languages:</b> PowerPC (MPC5xxx), ARM (Cortex-A8, A9, A15, M4 and some A54), Motorola 68K and 563xx (DSP), AVR (ATMega)</li>
-        <li><b>Systems and Software:</b> git, virtualenv, pip, *nix operating systems (esp. Ubuntu server/desktop), Altium, Vector, Intrepid Control Systems, Jenkins, MySQL, Matlab, RAID, NFS, Spice, wireshark, subversion, perforce</li>
+        <li><b>Architectures and Assembly Languages:</b>ARM (Cortex A: 8, 9, 15, 53, 72; R: 5; M: 40), Motorola 68K and 563xx (DSP), AVR (ATMega), a few others</li>
+        <li><b>Systems and Software:</b> git, virtualenv, docker, pip, *nix operating systems Altium, Vector, Intrepid Control Systems, Jenkins, MySQL, postgresql, wireshark, perforce</li>
         <li><b>Embedded Operating Systems:</b> FreeRTOS, LinuxRT, uTasker, and several custom (VTOS)</li>
-        <li><b>FPGA Tool-chains:</b> Xilinx Zynq, Cyclone II and Spartan III FPGA design, Xilinx ISE, Altera ISE, </li>
-        <li><b>Standards:</b> CAN, LIN, UDS, Zigbee (IEEE 802.15.4), Zigbee Smart Energy and (some) Home Automation 1.0 specifications, IEEE 803.2 (Ethernet) and some extensions, DOCSYS 2.0 (and some IPCableCom)</li>
-        <li><b>Test equipment:</b> Logic analyzers, oscilloscopes, DMMs, variacs, signal generators, power supplies, and isolation equipment, JTAG adapters</li>
+        <li><b>Standards:</b> AXI4, CAN, LIN, UDS, Zigbee (IEEE 802.15.4), IEEE 803.2 (Ethernet)</li>
+        <li><b>Test equipment:</b> Logic analyzers, oscilloscopes, DMMs, variacs, signal generators, power supplies, and isolation equipment, JTAG</li>
         <li><b>Hardware design:</b> embedded systems, CAN and Ethernet transceivers, linear circuits, DC-DC switching converters</li>
       </ul>
     </div>
